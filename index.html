@@ -1,291 +1,1286 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UNIX Practice Quiz</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="quiz-container">
-        <center><h1>LINUX MCQ QUESTION PRACTICE</h1></center>
-        <form id="quiz-form">
-            <div class="question" id="q1">
-                <h3>1. Which of the following is not a feature of UNIX?</h3>
-                <div class="options">
-                    <label><input type="radio" name="q1" value="a"> a) Multiuser</label>
-                    <label><input type="radio" name="q1" value="b"> b) Multitasking</label>
-                    <label><input type="radio" name="q1" value="c"> c) Graphical User Interface by default</label>
-                    <label><input type="radio" name="q1" value="d"> d) Portability</label>
-                </div>
-            </div>
-            <div class="question" id="q2">
-                <h3>2. The kernel of UNIX is responsible for:</h3>
-                <div class="options">
-                    <label><input type="radio" name="q2" value="a"> a) User interface</label>
-                    <label><input type="radio" name="q2" value="b"> b) Memory management</label>
-                    <label><input type="radio" name="q2" value="c"> c) File management</label>
-                    <label><input type="radio" name="q2" value="d"> d) Both b and c</label>
-                </div>
-            </div>
-            <div class="question" id="q3">
-                <h3>3. What is the primary function of the shell in UNIX?</h3>
-                <div class="options">
-                    <label><input type="radio" name="q3" value="a"> a) Manage processes</label>
-                    <label><input type="radio" name="q3" value="b"> b) Provide an interface between user and kernel</label>
-                    <label><input type="radio" name="q3" value="c"> c) Manage memory</label>
-                    <label><input type="radio" name="q3" value="d"> d) Manage file systems</label>
-                </div>
-            </div>
-            <div class="question" id="q4">
-                <h3>4. Which command is used to display the calendar in UNIX?</h3>
-                <div class="options">
-                    <label><input type="radio" name="q4" value="a"> a) cal</label>
-                    <label><input type="radio" name="q4" value="b"> b) calendar</label>
-                    <label><input type="radio" name="q4" value="c"> c) date</label>
-                    <label><input type="radio" name="q4" value="d"> d) time</label>
-                </div>
-            </div>
-            <div class="question" id="q5">
-                <h3>5. To display the current system date and time, the command is:</h3>
-                <div class="options">
-                    <label><input type="radio" name="q5" value="a"> a) time</label>
-                    <label><input type="radio" name="q5" value="b"> b) datetime</label>
-                    <label><input type="radio" name="q5" value="c"> c) date</label>
-                    <label><input type="radio" name="q5" value="d"> d) now</label>
-                </div>
-            </div>
-            <div class="question" id="q6">
-                <h3>6. What does the tty command do?</h3>
-                <div class="options">
-                    <label><input type="radio" name="q6" value="a"> a) Displays system processes</label>
-                    <label><input type="radio" name="q6" value="b"> b) Shows the terminal name connected to the standard input</label>
-                    <label><input type="radio" name="q6" value="c"> c) Lists logged-in users</label>
-                    <label><input type="radio" name="q6" value="d"> d) Displays system date</label>
-                </div>
-            </div>
-            <div class="question" id="q7">
-                <h3>7. What is the maximum length of a filename in UNIX?</h3>
-                <div class="options">
-                    <label><input type="radio" name="q7" value="a"> a) 8 characters</label>
-                    <label><input type="radio" name="q7" value="b"> b) 14 characters</label>
-                    <label><input type="radio" name="q7" value="c"> c) 255 characters</label>
-                    <label><input type="radio" name="q7" value="d"> d) Unlimited</label>
-                </div>
-            </div>
-            <div class="question" id="q8">
-                <h3>8. Which command is used to remove a file?</h3>
-                <div class="options">
-                    <label><input type="radio" name="q8" value="a"> a) rm</label>
-                    <label><input type="radio" name="q8" value="b"> b) del</label>
-                    <label><input type="radio" name="q8" value="c"> c) erase</label>
-                    <label><input type="radio" name="q8" value="d"> d) rmdir</label>
-                </div>
-            </div>
-            <div class="question" id="q9">
-                <h3>9. The command to list the contents of a directory is:</h3>
-                <div class="options">
-                    <label><input type="radio" name="q9" value="a"> a) ls</label>
-                    <label><input type="radio" name="q9" value="b"> b) dir</label>
-                    <label><input type="radio" name="q9" value="c"> c) list</label>
-                    <label><input type="radio" name="q9" value="d"> d) pwd</label>
-                </div>
-            </div>
-            <div class="question" id="q10">
-                <h3>10. The pwd command is used to:</h3>
-                <div class="options">
-                    <label><input type="radio" name="q10" value="a"> a) Display the parent directory</label>
-                    <label><input type="radio" name="q10" value="b"> b) Print the absolute path of the current directory</label>
-                    <label><input type="radio" name="q10" value="c"> c) Change the working directory</label>
-                    <label><input type="radio" name="q10" value="d"> d) List the contents of a directory</label>
-                </div>
-            </div>
-            <div class="question" id="q11">
-                <h3>11. The chmod command is used to:</h3>
-                <div class="options">
-                    <label><input type="radio" name="q11" value="a"> a) Change file ownership</label>
-                    <label><input type="radio" name="q11" value="b"> b) Change file permissions</label>
-                    <label><input type="radio" name="q11" value="c"> c) Move a file</label>
-                    <label><input type="radio" name="q11" value="d"> d) Copy a file</label>
-                </div>
-            </div>
-            <div class="question" id="q12">
-                <h3>12. What does umask do?</h3>
-                <div class="options">
-                    <label><input type="radio" name="q12" value="a"> a) Sets default permissions for new files and directories</label>
-                    <label><input type="radio" name="q12" value="b"> b) Changes file permissions</label>
-                    <label><input type="radio" name="q12" value="c"> c) Displays file ownership</label>
-                    <label><input type="radio" name="q12" value="d"> d) Removes files</label>
-                </div>
-            </div>
-            <div class="question" id="q13">
-                <h3>13. The inode number uniquely identifies:</h3>
-                <div class="options">
-                    <label><input type="radio" name="q13" value="a"> a) A file's name</label>
-                    <label><input type="radio" name="q13" value="b"> b) A file's location in the file system</label>
-                    <label><input type="radio" name="q13" value="c"> c) A file's contents</label>
-                    <label><input type="radio" name="q13" value="d"> d) A file's permissions</label>
-                </div>
-            </div>
-            <div class="question" id="q14">
-                <h3>14. Which of the following shells is not commonly used in UNIX?</h3>
-                <div class="options">
-                    <label><input type="radio" name="q14" value="a"> a) Bash</label>
-                    <label><input type="radio" name="q14" value="b"> b) C shell</label>
-                    <label><input type="radio" name="q14" value="c"> c) Korn shell</label>
-                    <label><input type="radio" name="q14" value="d"> d) DOS shell</label>
-                </div>
-            </div>
-            <div class="question" id="q15">
-                <h3>15. What does the ps command display?</h3>
-                <div class="options">
-                    <label><input type="radio" name="q15" value="a"> a) Current processes and their attributes</label>
-                    <label><input type="radio" name="q15" value="b"> b) System uptime</label>
-                    <label><input type="radio" name="q15" value="c"> c) Memory usage</label>
-                    <label><input type="radio" name="q15" value="d"> d) CPU usage</label>
-                </div>
-            </div>
-            <div class="question" id="q16">
-                <h3>16. Which command is used to terminate a process by its PID?</h3>
-                <div class="options">
-                    <label><input type="radio" name="q16" value="a"> a) kill</label>
-                    <label><input type="radio" name="q16" value="b"> b) terminate</label>
-                    <label><input type="radio" name="q16" value="c"> c) stop</label>
-                    <label><input type="radio" name="q16" value="d"> d) exit</label>
-                </div>
-            </div>
-            <div class="question" id="q17">
-                <h3>17. The redirection operator > is used to:</h3>
-                <div class="options">
-                    <label><input type="radio" name="q17" value="a"> a) Append data to a file</label>
-                    <label><input type="radio" name="q17" value="b"> b) Overwrite data in a file</label>
-                    <label><input type="radio" name="q17" value="c"> c) Redirect input to a file</label>
-                    <label><input type="radio" name="q17" value="d"> d) Pipe output to another command</label>
-                </div>
-            </div>
-            <div class="question" id="q18">
-                <h3>18. What does the tee command do?</h3>
-                <div class="options">
-                    <label><input type="radio" name="q18" value="a"> a) Sends output to multiple destinations</label>
-                    <label><input type="radio" name="q18" value="b"> b) Filters text files</label>
-                    <label><input type="radio" name="q18" value="c"> c) Compresses files</label>
-                    <label><input type="radio" name="q18" value="d"> d) Lists running processes</label>
-                </div>
-            </div>
-            <div class="question" id="q19">
-                <h3>19. What does /dev/null represent in UNIX?</h3>
-                <div class="options">
-                    <label><input type="radio" name="q19" value="a"> a) A storage device</label>
-                    <label><input type="radio" name="q19" value="b"> b) A special file to discard data</label>
-                    <label><input type="radio" name="q19" value="c"> c) An input file</label>
-                    <label><input type="radio" name="q19" value="d"> d) A terminal device</label>
-                </div>
-            </div>
-            <div class="question" id="q20">
-                <h3>20. To find the differences between two files, the command is:</h3>
-                <div class="options">
-                    <label><input type="radio" name="q20" value="a"> a) cmp</label>
-                    <label><input type="radio" name="q20" value="b"> b) comm</label>
-                    <label><input type="radio" name="q20" value="c"> c) diff</label>
-                    <label><input type="radio" name="q20" value="d"> d) file</label>
-                </div>
-            </div>
-            <div class="question" id="q21">
-                <h3>21. The wc command is used for:</h3>
-                <div class="options">
-                    <label><input type="radio" name="q21" value="a"> a) Counting words, lines, and characters</label>
-                    <label><input type="radio" name="q21" value="b"> b) Comparing files</label>
-                    <label><input type="radio" name="q21" value="c"> c) Displaying file permissions</label>
-                    <label><input type="radio" name="q21" value="d"> d) Locating files</label>
-                </div>
-            </div>
-            <div class="question" id="q22">
-                <h3>22. What is the function of the sort command?</h3>
-                <div class="options">
-                    <label><input type="radio" name="q22" value="a"> a) Sorts files by date</label>
-                    <label><input type="radio" name="q22" value="b"> b) Sorts the lines of a file</label>
-                    <label><input type="radio" name="q22" value="c"> c) Sorts files by size</label>
-                    <label><input type="radio" name="q22" value="d"> d) Deletes duplicate lines in a file</label>
-                </div>
-            </div>
-            <div class="question" id="q23">
-                <h3>23. Which command searches for a pattern in a file?</h3>
-                <div class="options">
-                    <label><input type="radio" name="q23" value="a"> a) find</label>
-                    <label><input type="radio" name="q23" value="b"> b) grep</label>
-                    <label><input type="radio" name="q23" value="c"> c) locate</label>
-                    <label><input type="radio" name="q23" value="d"> d) search</label>
-                </div>
-            </div>
-            <div class="question" id="q24">
-                <h3>24. To use extended regular expressions in grep, you use:</h3>
-                <div class="options">
-                    <label><input type="radio" name="q24" value="a"> a) egrep</label>
-                    <label><input type="radio" name="q24" value="b"> b) xgrep</label>
-                    <label><input type="radio" name="q24" value="c"> c) zgrep</label>
-                    <label><input type="radio" name="q24" value="d"> d) rgrep</label>
-                </div>
-            </div>
-            <div class="question" id="q25">
-                <h3>25. What symbol is used to denote comments in a shell script?</h3>
-                <div class="options">
-                    <label><input type="radio" name="q25" value="a"> a) #</label>
-                    <label><input type="radio" name="q25" value="b"> b) //</label>
-                    <label><input type="radio" name="q25" value="c"> c) /* */</label>
-                    <label><input type="radio" name="q25" value="d"> d) @</label>
-                </div>
-            </div>
-            <div class="question" id="q26">
-                <h3>26. Which operator is used for logical AND in shell scripting?</h3>
-                <div class="options">
-                    <label><input type="radio" name="q26" value="a"> a) &&</label>
-                    <label><input type="radio" name="q26" value="b"> b) ||</label>
-                    <label><input type="radio" name="q26" value="c"> c) ==</label>
-                    <label><input type="radio" name="q26" value="d"> d) &</label>
-                </div>
-            </div>
-            <div class="question" id="q27">
-                <h3>27. In shell scripting, $1, $2, etc., represent:</h3>
-                <div class="options">
-                    <label><input type="radio" name="q27" value="a"> a) Environment variables</label>
-                    <label><input type="radio" name="q27" value="b"> b) Positional parameters</label>
-                    <label><input type="radio" name="q27" value="c"> c) Command substitution</label>
-                    <label><input type="radio" name="q27" value="d"> d) Loop variables</label>
-                </div>
-            </div>
-            <div class="question" id="q28">
-                <h3>28. Which command is used to add a new user in UNIX?</h3>
-                <div class="options">
-                    <label><input type="radio" name="q28" value="a"> a) adduser</label>
-                    <label><input type="radio" name="q28" value="b"> b) newuser</label>
-                    <label><input type="radio" name="q28" value="c"> c) useradd</label>
-                    <label><input type="radio" name="q28" value="d"> d) createuser</label>
-                </div>
-            </div>
-            <div class="question" id="q29">
-                <h3>29. The shutdown command is used to:</h3>
-                <div class="options">
-                    <label><input type="radio" name="q29" value="a"> a) Reboot the system</label>
-                    <label><input type="radio" name="q29" value="b"> b) Bring the system down safely</label>
-                    <label><input type="radio" name="q29" value="c"> c) Log out users</label>
-                    <label><input type="radio" name="q29" value="d"> d) Terminate all processes</label>
-                </div>
-            </div>
-            <div class="question" id="q30">
-                <h3>30. Which command shows disk usage by users?</h3>
-                <div class="options">
-                    <label><input type="radio" name="q30" value="a"> a) du</label>
-                    <label><input type="radio" name="q30" value="b"> b) df</label>
-                    <label><input type="radio" name="q30" value="c"> c) quota</label>
-                    <label><input type="radio" name="q30" value="d"> d) diskstat</label>
-                </div>
-            </div>            
-            <div class="button">
-                <button type="button" id="submit-btn">Submit</button>
-            </div>
-        </form>
-        <div id="result" class="result"></div>
+      <center><h1>LINUX MCQ QUESTION PRACTICE</h1></center>
+      <form id="quiz-form">
+        <div class="question" id="q1">
+          <h3>1. Which of the following is not a feature of UNIX?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q1" value="a" /> a) Multiuser</label
+            >
+            <label
+              ><input type="radio" name="q1" value="b" /> b) Multitasking</label
+            >
+            <label
+              ><input type="radio" name="q1" value="c" /> c) Graphical User
+              Interface by default</label
+            >
+            <label
+              ><input type="radio" name="q1" value="d" /> d) Portability</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q2">
+          <h3>2. The kernel of UNIX is responsible for:</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q2" value="a" /> a) User
+              interface</label
+            >
+            <label
+              ><input type="radio" name="q2" value="b" /> b) Memory
+              management</label
+            >
+            <label
+              ><input type="radio" name="q2" value="c" /> c) File
+              management</label
+            >
+            <label
+              ><input type="radio" name="q2" value="d" /> d) Both b and c</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q3">
+          <h3>3. What is the primary function of the shell in UNIX?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q3" value="a" /> a) Manage
+              processes</label
+            >
+            <label
+              ><input type="radio" name="q3" value="b" /> b) Provide an
+              interface between user and kernel</label
+            >
+            <label
+              ><input type="radio" name="q3" value="c" /> c) Manage
+              memory</label
+            >
+            <label
+              ><input type="radio" name="q3" value="d" /> d) Manage file
+              systems</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q4">
+          <h3>4. Which command is used to display the calendar in UNIX?</h3>
+          <div class="options">
+            <label><input type="radio" name="q4" value="a" /> a) cal</label>
+            <label
+              ><input type="radio" name="q4" value="b" /> b) calendar</label
+            >
+            <label><input type="radio" name="q4" value="c" /> c) date</label>
+            <label><input type="radio" name="q4" value="d" /> d) time</label>
+          </div>
+        </div>
+        <div class="question" id="q5">
+          <h3>
+            5. To display the current system date and time, the command is:
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q5" value="a" /> a) time</label>
+            <label
+              ><input type="radio" name="q5" value="b" /> b) datetime</label
+            >
+            <label><input type="radio" name="q5" value="c" /> c) date</label>
+            <label><input type="radio" name="q5" value="d" /> d) now</label>
+          </div>
+        </div>
+        <div class="question" id="q6">
+          <h3>6. What does the tty command do?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q6" value="a" /> a) Displays system
+              processes</label
+            >
+            <label
+              ><input type="radio" name="q6" value="b" /> b) Shows the terminal
+              name connected to the standard input</label
+            >
+            <label
+              ><input type="radio" name="q6" value="c" /> c) Lists logged-in
+              users</label
+            >
+            <label
+              ><input type="radio" name="q6" value="d" /> d) Displays system
+              date</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q7">
+          <h3>7. What is the maximum length of a filename in UNIX?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q7" value="a" /> a) 8 characters</label
+            >
+            <label
+              ><input type="radio" name="q7" value="b" /> b) 14
+              characters</label
+            >
+            <label
+              ><input type="radio" name="q7" value="c" /> c) 255
+              characters</label
+            >
+            <label
+              ><input type="radio" name="q7" value="d" /> d) Unlimited</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q8">
+          <h3>8. Which command is used to remove a file?</h3>
+          <div class="options">
+            <label><input type="radio" name="q8" value="a" /> a) rm</label>
+            <label><input type="radio" name="q8" value="b" /> b) del</label>
+            <label><input type="radio" name="q8" value="c" /> c) erase</label>
+            <label><input type="radio" name="q8" value="d" /> d) rmdir</label>
+          </div>
+        </div>
+        <div class="question" id="q9">
+          <h3>9. The command to list the contents of a directory is:</h3>
+          <div class="options">
+            <label><input type="radio" name="q9" value="a" /> a) ls</label>
+            <label><input type="radio" name="q9" value="b" /> b) dir</label>
+            <label><input type="radio" name="q9" value="c" /> c) list</label>
+            <label><input type="radio" name="q9" value="d" /> d) pwd</label>
+          </div>
+        </div>
+        <div class="question" id="q10">
+          <h3>10. The pwd command is used to:</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q10" value="a" /> a) Display the parent
+              directory</label
+            >
+            <label
+              ><input type="radio" name="q10" value="b" /> b) Print the absolute
+              path of the current directory</label
+            >
+            <label
+              ><input type="radio" name="q10" value="c" /> c) Change the working
+              directory</label
+            >
+            <label
+              ><input type="radio" name="q10" value="d" /> d) List the contents
+              of a directory</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q11">
+          <h3>11. The chmod command is used to:</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q11" value="a" /> a) Change file
+              ownership</label
+            >
+            <label
+              ><input type="radio" name="q11" value="b" /> b) Change file
+              permissions</label
+            >
+            <label
+              ><input type="radio" name="q11" value="c" /> c) Move a file</label
+            >
+            <label
+              ><input type="radio" name="q11" value="d" /> d) Copy a file</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q12">
+          <h3>12. What does umask do?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q12" value="a" /> a) Sets default
+              permissions for new files and directories</label
+            >
+            <label
+              ><input type="radio" name="q12" value="b" /> b) Changes file
+              permissions</label
+            >
+            <label
+              ><input type="radio" name="q12" value="c" /> c) Displays file
+              ownership</label
+            >
+            <label
+              ><input type="radio" name="q12" value="d" /> d) Removes
+              files</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q13">
+          <h3>13. The inode number uniquely identifies:</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q13" value="a" /> a) A file's
+              name</label
+            >
+            <label
+              ><input type="radio" name="q13" value="b" /> b) A file's location
+              in the file system</label
+            >
+            <label
+              ><input type="radio" name="q13" value="c" /> c) A file's
+              contents</label
+            >
+            <label
+              ><input type="radio" name="q13" value="d" /> d) A file's
+              permissions</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q14">
+          <h3>
+            14. Which of the following shells is not commonly used in UNIX?
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q14" value="a" /> a) Bash</label>
+            <label
+              ><input type="radio" name="q14" value="b" /> b) C shell</label
+            >
+            <label
+              ><input type="radio" name="q14" value="c" /> c) Korn shell</label
+            >
+            <label
+              ><input type="radio" name="q14" value="d" /> d) DOS shell</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q15">
+          <h3>15. What does the ps command display?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q15" value="a" /> a) Current processes
+              and their attributes</label
+            >
+            <label
+              ><input type="radio" name="q15" value="b" /> b) System
+              uptime</label
+            >
+            <label
+              ><input type="radio" name="q15" value="c" /> c) Memory
+              usage</label
+            >
+            <label
+              ><input type="radio" name="q15" value="d" /> d) CPU usage</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q16">
+          <h3>16. Which command is used to terminate a process by its PID?</h3>
+          <div class="options">
+            <label><input type="radio" name="q16" value="a" /> a) kill</label>
+            <label
+              ><input type="radio" name="q16" value="b" /> b) terminate</label
+            >
+            <label><input type="radio" name="q16" value="c" /> c) stop</label>
+            <label><input type="radio" name="q16" value="d" /> d) exit</label>
+          </div>
+        </div>
+        <div class="question" id="q17">
+          <h3>17. The redirection operator > is used to:</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q17" value="a" /> a) Append data to a
+              file</label
+            >
+            <label
+              ><input type="radio" name="q17" value="b" /> b) Overwrite data in
+              a file</label
+            >
+            <label
+              ><input type="radio" name="q17" value="c" /> c) Redirect input to
+              a file</label
+            >
+            <label
+              ><input type="radio" name="q17" value="d" /> d) Pipe output to
+              another command</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q18">
+          <h3>18. What does the tee command do?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q18" value="a" /> a) Sends output to
+              multiple destinations</label
+            >
+            <label
+              ><input type="radio" name="q18" value="b" /> b) Filters text
+              files</label
+            >
+            <label
+              ><input type="radio" name="q18" value="c" /> c) Compresses
+              files</label
+            >
+            <label
+              ><input type="radio" name="q18" value="d" /> d) Lists running
+              processes</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q19">
+          <h3>19. What does /dev/null represent in UNIX?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q19" value="a" /> a) A storage
+              device</label
+            >
+            <label
+              ><input type="radio" name="q19" value="b" /> b) A special file to
+              discard data</label
+            >
+            <label
+              ><input type="radio" name="q19" value="c" /> c) An input
+              file</label
+            >
+            <label
+              ><input type="radio" name="q19" value="d" /> d) A terminal
+              device</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q20">
+          <h3>
+            20. To find the differences between two files, the command is:
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q20" value="a" /> a) cmp</label>
+            <label><input type="radio" name="q20" value="b" /> b) comm</label>
+            <label><input type="radio" name="q20" value="c" /> c) diff</label>
+            <label><input type="radio" name="q20" value="d" /> d) file</label>
+          </div>
+        </div>
+        <div class="question" id="q21">
+          <h3>21. The wc command is used for:</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q21" value="a" /> a) Counting words,
+              lines, and characters</label
+            >
+            <label
+              ><input type="radio" name="q21" value="b" /> b) Comparing
+              files</label
+            >
+            <label
+              ><input type="radio" name="q21" value="c" /> c) Displaying file
+              permissions</label
+            >
+            <label
+              ><input type="radio" name="q21" value="d" /> d) Locating
+              files</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q22">
+          <h3>22. What is the function of the sort command?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q22" value="a" /> a) Sorts files by
+              date</label
+            >
+            <label
+              ><input type="radio" name="q22" value="b" /> b) Sorts the lines of
+              a file</label
+            >
+            <label
+              ><input type="radio" name="q22" value="c" /> c) Sorts files by
+              size</label
+            >
+            <label
+              ><input type="radio" name="q22" value="d" /> d) Deletes duplicate
+              lines in a file</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q23">
+          <h3>23. Which command searches for a pattern in a file?</h3>
+          <div class="options">
+            <label><input type="radio" name="q23" value="a" /> a) find</label>
+            <label><input type="radio" name="q23" value="b" /> b) grep</label>
+            <label><input type="radio" name="q23" value="c" /> c) locate</label>
+            <label><input type="radio" name="q23" value="d" /> d) search</label>
+          </div>
+        </div>
+        <div class="question" id="q24">
+          <h3>24. To use extended regular expressions in grep, you use:</h3>
+          <div class="options">
+            <label><input type="radio" name="q24" value="a" /> a) egrep</label>
+            <label><input type="radio" name="q24" value="b" /> b) xgrep</label>
+            <label><input type="radio" name="q24" value="c" /> c) zgrep</label>
+            <label><input type="radio" name="q24" value="d" /> d) rgrep</label>
+          </div>
+        </div>
+        <div class="question" id="q25">
+          <h3>25. What symbol is used to denote comments in a shell script?</h3>
+          <div class="options">
+            <label><input type="radio" name="q25" value="a" /> a) #</label>
+            <label><input type="radio" name="q25" value="b" /> b) //</label>
+            <label><input type="radio" name="q25" value="c" /> c) /* */</label>
+            <label><input type="radio" name="q25" value="d" /> d) @</label>
+          </div>
+        </div>
+        <div class="question" id="q26">
+          <h3>
+            26. Which operator is used for logical AND in shell scripting?
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q26" value="a" /> a) &&</label>
+            <label><input type="radio" name="q26" value="b" /> b) ||</label>
+            <label><input type="radio" name="q26" value="c" /> c) ==</label>
+            <label><input type="radio" name="q26" value="d" /> d) &</label>
+          </div>
+        </div>
+        <div class="question" id="q27">
+          <h3>27. In shell scripting, $1, $2, etc., represent:</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q27" value="a" /> a) Environment
+              variables</label
+            >
+            <label
+              ><input type="radio" name="q27" value="b" /> b) Positional
+              parameters</label
+            >
+            <label
+              ><input type="radio" name="q27" value="c" /> c) Command
+              substitution</label
+            >
+            <label
+              ><input type="radio" name="q27" value="d" /> d) Loop
+              variables</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q28">
+          <h3>28. Which command is used to add a new user in UNIX?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q28" value="a" /> a) adduser</label
+            >
+            <label
+              ><input type="radio" name="q28" value="b" /> b) newuser</label
+            >
+            <label
+              ><input type="radio" name="q28" value="c" /> c) useradd</label
+            >
+            <label
+              ><input type="radio" name="q28" value="d" /> d) createuser</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q29">
+          <h3>29. The shutdown command is used to:</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q29" value="a" /> a) Reboot the
+              system</label
+            >
+            <label
+              ><input type="radio" name="q29" value="b" /> b) Bring the system
+              down safely</label
+            >
+            <label
+              ><input type="radio" name="q29" value="c" /> c) Log out
+              users</label
+            >
+            <label
+              ><input type="radio" name="q29" value="d" /> d) Terminate all
+              processes</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q30">
+          <h3>30. Which command shows disk usage by users?</h3>
+          <div class="options">
+            <label><input type="radio" name="q30" value="a" /> a) du</label>
+            <label><input type="radio" name="q30" value="b" /> b) df</label>
+            <label><input type="radio" name="q30" value="c" /> c) quota</label>
+            <label
+              ><input type="radio" name="q30" value="d" /> d) diskstat</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q31">
+          <h3>
+            31. What is the core component of the UNIX operating system
+            responsible for managing system resources?
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q31" value="a" /> a) Shell</label>
+            <label><input type="radio" name="q31" value="b" /> b) Kernel</label>
+            <label
+              ><input type="radio" name="q31" value="c" /> c) File system</label
+            >
+            <label
+              ><input type="radio" name="q31" value="d" /> d) Terminal</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q32">
+          <h3>
+            32. Which of the following interacts directly with the hardware in
+            UNIX?
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q32" value="a" /> a) Kernel</label>
+            <label><input type="radio" name="q32" value="b" /> b) Shell</label>
+            <label
+              ><input type="radio" name="q32" value="c" /> c) File system</label
+            >
+            <label><input type="radio" name="q32" value="d" /> d) User</label>
+          </div>
+        </div>
+        <div class="question" id="q33">
+          <h3>33. What are system calls in UNIX?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q33" value="a" /> a) Functions provided
+              by the shell</label
+            >
+            <label
+              ><input type="radio" name="q33" value="b" /> b) Commands executed
+              by the user</label
+            >
+            <label
+              ><input type="radio" name="q33" value="c" /> c) Interface between
+              user programs and the operating system</label
+            >
+            <label
+              ><input type="radio" name="q33" value="d" /> d) Programs stored in
+              the /bin directory</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q34">
+          <h3>34. Which of the following is NOT a feature of UNIX?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q34" value="a" /> a)
+              Multitasking</label
+            >
+            <label
+              ><input type="radio" name="q34" value="b" /> b) Multiuser
+              capability</label
+            >
+            <label
+              ><input type="radio" name="q34" value="c" /> c) Single programming
+              language support</label
+            >
+            <label
+              ><input type="radio" name="q34" value="d" /> d) Portability</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q35">
+          <h3>35. What does POSIX stand for in UNIX?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q35" value="a" /> a) Portable Operating
+              System Interface</label
+            >
+            <label
+              ><input type="radio" name="q35" value="b" /> b) Permanent
+              Operating System Instructions</label
+            >
+            <label
+              ><input type="radio" name="q35" value="c" /> c) Process Oriented
+              System Interface</label
+            >
+            <label
+              ><input type="radio" name="q35" value="d" /> d) Personal Operating
+              System Instructions</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q36">
+          <h3>
+            36. Which of the following is NOT a valid type of file in UNIX?
+          </h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q36" value="a" /> a) Regular
+              file</label
+            >
+            <label
+              ><input type="radio" name="q36" value="b" /> b) Directory
+              file</label
+            >
+            <label
+              ><input type="radio" name="q36" value="c" /> c) Special
+              file</label
+            >
+            <label
+              ><input type="radio" name="q36" value="d" /> d) Virtual
+              file</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q37">
+          <h3>37. Which command is used to display the system date in UNIX?</h3>
+          <div class="options">
+            <label><input type="radio" name="q37" value="a" /> a) cal</label>
+            <label><input type="radio" name="q37" value="b" /> b) date</label>
+            <label><input type="radio" name="q37" value="c" /> c) echo</label>
+            <label><input type="radio" name="q37" value="d" /> d) tty</label>
+          </div>
+        </div>
+        <div class="question" id="q38">
+          <h3>38. What does the command pwd display in UNIX?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q38" value="a" /> a) List of files in
+              the current directory</label
+            >
+            <label
+              ><input type="radio" name="q38" value="b" /> b) Pathname of the
+              current directory</label
+            >
+            <label
+              ><input type="radio" name="q38" value="c" /> c) Disk usage of the
+              current directory</label
+            >
+            <label
+              ><input type="radio" name="q38" value="d" /> d) Permissions of
+              files in the current directory</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q39">
+          <h3>39. Which command is used to copy a file in UNIX?</h3>
+          <div class="options">
+            <label><input type="radio" name="q39" value="a" /> a) rm</label>
+            <label><input type="radio" name="q39" value="b" /> b) cp</label>
+            <label><input type="radio" name="q39" value="c" /> c) mv</label>
+            <label><input type="radio" name="q39" value="d" /> d) cat</label>
+          </div>
+        </div>
+        <div class="question" id="q40">
+          <h3>40. In UNIX, what does the .. (dot-dot) symbol represent?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q40" value="a" /> a) Current
+              directory</label
+            >
+            <label
+              ><input type="radio" name="q40" value="b" /> b) Parent
+              directory</label
+            >
+            <label
+              ><input type="radio" name="q40" value="c" /> c) Root
+              directory</label
+            >
+            <label
+              ><input type="radio" name="q40" value="d" /> d) Home
+              directory</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q41">
+          <h3>
+            41. Which command is used to create or display the content of a file
+            in UNIX?
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q41" value="a" /> a) cat</label>
+            <label><input type="radio" name="q41" value="b" /> b) cp</label>
+            <label><input type="radio" name="q41" value="c" /> c) mv</label>
+            <label><input type="radio" name="q41" value="d" /> d) wc</label>
+          </div>
+        </div>
+        <div class="question" id="q42">
+          <h3>42. What happens when the cp command is used on a file?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q42" value="a" /> a) The file is
+              renamed.</label
+            >
+            <label
+              ><input type="radio" name="q42" value="b" /> b) The file is
+              deleted.</label
+            >
+            <label
+              ><input type="radio" name="q42" value="c" /> c) A duplicate of the
+              file is created in the specified location.</label
+            >
+            <label
+              ><input type="radio" name="q42" value="d" /> d) The file is
+              compressed.</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q43">
+          <h3>
+            43. Which command is used to compare two files byte by byte in UNIX?
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q43" value="a" /> a) diff</label>
+            <label><input type="radio" name="q43" value="b" /> b) cmp</label>
+            <label><input type="radio" name="q43" value="c" /> c) comm</label>
+            <label><input type="radio" name="q43" value="d" /> d) wc</label>
+          </div>
+        </div>
+        <div class="question" id="q44">
+          <h3>44. Which command is used to compress files in UNIX?</h3>
+          <div class="options">
+            <label><input type="radio" name="q44" value="a" /> a) tar</label>
+            <label><input type="radio" name="q44" value="b" /> b) gzip</label>
+            <label><input type="radio" name="q44" value="c" /> c) zip</label>
+            <label><input type="radio" name="q44" value="d" /> d) gunzip</label>
+          </div>
+        </div>
+        <div class="question" id="q45">
+          <h3>45. Which command is used to change file permissions in UNIX?</h3>
+          <div class="options">
+            <label><input type="radio" name="q45" value="a" /> a) chmod</label>
+            <label><input type="radio" name="q45" value="b" /> b) chown</label>
+            <label><input type="radio" name="q45" value="c" /> c) umask</label>
+            <label><input type="radio" name="q45" value="d" /> d) touch</label>
+          </div>
+        </div>
+        <div class="question" id="q46">
+          <h3>46. How can you change the ownership of a file in UNIX?</h3>
+          <div class="options">
+            <label><input type="radio" name="q46" value="a" /> a) chmod</label>
+            <label><input type="radio" name="q46" value="b" /> b) chown</label>
+            <label><input type="radio" name="q46" value="c" /> c) umask</label>
+            <label><input type="radio" name="q46" value="d" /> d) ls</label>
+          </div>
+        </div>
+        <div class="question" id="q47">
+          <h3>47. Which of the following is TRUE about a hard link in UNIX?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q47" value="a" /> a) It creates a
+              duplicate file with a new inode.</label
+            >
+            <label
+              ><input type="radio" name="q47" value="b" /> b) It is a reference
+              to the same inode as the original file.</label
+            >
+            <label
+              ><input type="radio" name="q47" value="c" /> c) It can link
+              directories.</label
+            >
+            <label
+              ><input type="radio" name="q47" value="d" /> d) It depends on the
+              parent directory.</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q48">
+          <h3>
+            48. What are the default file and directory permissions in UNIX
+            (without umask modification)?
+          </h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q48" value="a" /> a) 666 for files and
+              777 for directories</label
+            >
+            <label
+              ><input type="radio" name="q48" value="b" /> b) 644 for files and
+              755 for directories</label
+            >
+            <label
+              ><input type="radio" name="q48" value="c" /> c) 777 for files and
+              777 for directories</label
+            >
+            <label
+              ><input type="radio" name="q48" value="d" /> d) 555 for files and
+              666 for directories</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q49">
+          <h3>
+            49. Which command is used to locate files in UNIX based on various
+            criteria?
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q49" value="a" /> a) find</label>
+            <label><input type="radio" name="q49" value="b" /> b) locate</label>
+            <label><input type="radio" name="q49" value="c" /> c) search</label>
+            <label><input type="radio" name="q49" value="d" /> d) grep</label>
+          </div>
+        </div>
+        <div class="question" id="q50">
+          <h3>
+            50. Which command is used to change the modification and access time
+            of a file?
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q50" value="a" /> a) touch</label>
+            <label><input type="radio" name="q50" value="b" /> b) chmod</label>
+            <label><input type="radio" name="q50" value="c" /> c) mv</label>
+            <label><input type="radio" name="q50" value="d" /> d) ls</label>
+          </div>
+        </div>
+        <div class="question" id="q51">
+          <h3>51. Which shell is the default shell for most UNIX systems?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q51" value="a" /> a) C Shell
+              (csh)</label
+            >
+            <label
+              ><input type="radio" name="q51" value="b" /> b) Korn Shell
+              (ksh)</label
+            >
+            <label
+              ><input type="radio" name="q51" value="c" /> c) Bourne Shell
+              (sh)</label
+            >
+            <label
+              ><input type="radio" name="q51" value="d" /> d) Z Shell
+              (zsh)</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q52">
+          <h3>
+            52. What does the command <code>command > file</code> do in UNIX?
+          </h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q52" value="a" /> a) Appends the output
+              of command to file.</label
+            >
+            <label
+              ><input type="radio" name="q52" value="b" /> b) Redirects the
+              output of command to file, overwriting its content.</label
+            >
+            <label
+              ><input type="radio" name="q52" value="c" /> c) Displays the
+              output of command to both the terminal and file.</label
+            >
+            <label
+              ><input type="radio" name="q52" value="d" /> d) Redirects input
+              from file to the command.</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q53">
+          <h3>53. What is the purpose of a pipe (|) in UNIX?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q53" value="a" /> a) Redirects input to
+              a file.</label
+            >
+            <label
+              ><input type="radio" name="q53" value="b" /> b) Combines the
+              output of one command as input to another.</label
+            >
+            <label
+              ><input type="radio" name="q53" value="c" /> c) Sends output to
+              multiple files.</label
+            >
+            <label
+              ><input type="radio" name="q53" value="d" /> d) Executes commands
+              sequentially.</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q54">
+          <h3>54. What is the syntax for command substitution in UNIX?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q54" value="a" /> a) $(command)</label
+            >
+            <label
+              ><input type="radio" name="q54" value="b" /> b) {command}</label
+            >
+            <label
+              ><input type="radio" name="q54" value="c" /> c)
+              &lt;command&gt;</label
+            >
+            <label
+              ><input type="radio" name="q54" value="d" /> d) [command]</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q55">
+          <h3>
+            55. What command is used to display a list of all running processes
+            in UNIX?
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q55" value="a" /> a) jobs</label>
+            <label><input type="radio" name="q55" value="b" /> b) ps</label>
+            <label><input type="radio" name="q55" value="c" /> c) fg</label>
+            <label><input type="radio" name="q55" value="d" /> d) nohup</label>
+          </div>
+        </div>
+        <div class="question" id="q56">
+          <h3>56. What is a zombie process in UNIX?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q56" value="a" /> a) A process that is
+              running in the background.</label
+            >
+            <label
+              ><input type="radio" name="q56" value="b" /> b) A process that is
+              suspended.</label
+            >
+            <label
+              ><input type="radio" name="q56" value="c" /> c) A process that has
+              completed execution but still has an entry in the process
+              table.</label
+            >
+            <label
+              ><input type="radio" name="q56" value="d" /> d) A process that
+              consumes high system resources.</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q57">
+          <h3>
+            57. Which operator is used to execute a command in the background in
+            UNIX?
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q57" value="a" /> a) |</label>
+            <label><input type="radio" name="q57" value="b" /> b) ></label>
+            <label><input type="radio" name="q57" value="c" /> c) &</label>
+            <label><input type="radio" name="q57" value="d" /> d) &&</label>
+          </div>
+        </div>
+        <div class="question" id="q58">
+          <h3>
+            58. What command brings a background job to the foreground in UNIX?
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q58" value="a" /> a) bg</label>
+            <label><input type="radio" name="q58" value="b" /> b) fg</label>
+            <label><input type="radio" name="q58" value="c" /> c) jobs</label>
+            <label><input type="radio" name="q58" value="d" /> d) nohup</label>
+          </div>
+        </div>
+        <div class="question" id="q59">
+          <h3>
+            59. Which command is used to schedule a job to run at a specific
+            time in UNIX?
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q59" value="a" /> a) nohup</label>
+            <label><input type="radio" name="q59" value="b" /> b) batch</label>
+            <label><input type="radio" name="q59" value="c" /> c) at</label>
+            <label><input type="radio" name="q59" value="d" /> d) fg</label>
+          </div>
+        </div>
+        <div class="question" id="q60">
+          <h3>
+            60. Which environment variable specifies the directories where
+            executable files are searched?
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q60" value="a" /> a) HOME</label>
+            <label><input type="radio" name="q60" value="b" /> b) PATH</label>
+            <label><input type="radio" name="q60" value="c" /> c) TERM</label>
+            <label><input type="radio" name="q60" value="d" /> d) PS1</label>
+          </div>
+        </div>
+        <div class="question" id="q61">
+          <h3>61. What does the HOME environment variable store?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q61" value="a" /> a) The path to the
+              current working directory.</label
+            >
+            <label
+              ><input type="radio" name="q61" value="b" /> b) The default shell
+              used by the user.</label
+            >
+            <label
+              ><input type="radio" name="q61" value="c" /> c) The absolute path
+              of the user’s home directory.</label
+            >
+            <label
+              ><input type="radio" name="q61" value="d" /> d) The name of the
+              user logged in.</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q62">
+          <h3>
+            62. Which command is used to define a shortcut for another command
+            in UNIX?
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q62" value="a" /> a) export</label>
+            <label><input type="radio" name="q62" value="b" /> b) alias</label>
+            <label
+              ><input type="radio" name="q62" value="c" /> c) history</label
+            >
+            <label><input type="radio" name="q62" value="d" /> d) set</label>
+          </div>
+        </div>
+        <div class="question" id="q63">
+          <h3>
+            63. Which command is used to display the history of previously
+            executed commands?
+          </h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q63" value="a" /> a) history</label
+            >
+            <label
+              ><input type="radio" name="q63" value="b" /> b) logname</label
+            >
+            <label><input type="radio" name="q63" value="c" /> c) ps1</label>
+            <label><input type="radio" name="q63" value="d" /> d) grep</label>
+          </div>
+        </div>
+        <div class="question" id="q64">
+          <h3>64. Which command displays the first few lines of a file?</h3>
+          <div class="options">
+            <label><input type="radio" name="q64" value="a" /> a) head</label>
+            <label><input type="radio" name="q64" value="b" /> b) tail</label>
+            <label><input type="radio" name="q64" value="c" /> c) cut</label>
+            <label><input type="radio" name="q64" value="d" /> d) uniq</label>
+          </div>
+        </div>
+        <div class="question" id="q65">
+          <h3>
+            65. Which command is used to sort the lines of a file in UNIX?
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q65" value="a" /> a) uniq</label>
+            <label><input type="radio" name="q65" value="b" /> b) sort</label>
+            <label><input type="radio" name="q65" value="c" /> c) cut</label>
+            <label><input type="radio" name="q65" value="d" /> d) paste</label>
+          </div>
+        </div>
+        <div class="question" id="q66">
+          <h3>
+            66. Which command is used to search for a pattern in a file in UNIX?
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q66" value="a" /> a) tr</label>
+            <label><input type="radio" name="q66" value="b" /> b) cut</label>
+            <label><input type="radio" name="q66" value="c" /> c) grep</label>
+            <label><input type="radio" name="q66" value="d" /> d) uniq</label>
+          </div>
+        </div>
+        <div class="question" id="q67">
+          <h3>
+            67. What does the egrep command support that grep does not by
+            default?
+          </h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q67" value="a" /> a) Basic Regular
+              Expressions (BRE)</label
+            >
+            <label
+              ><input type="radio" name="q67" value="b" /> b) Extended Regular
+              Expressions (ERE)</label
+            >
+            <label
+              ><input type="radio" name="q67" value="c" /> c) Searching multiple
+              files</label
+            >
+            <label
+              ><input type="radio" name="q67" value="d" /> d) Case-insensitive
+              search</label
+            >
+          </div>
+        </div>
+
+        <div class="question" id="q68">
+          <h3>68. Which command filters out duplicate lines from a file?</h3>
+          <div class="options">
+            <label><input type="radio" name="q68" value="a" /> a) uniq</label>
+            <label><input type="radio" name="q68" value="b" /> b) sort</label>
+            <label><input type="radio" name="q68" value="c" /> c) paste</label>
+            <label><input type="radio" name="q68" value="d" /> d) grep</label>
+          </div>
+        </div>
+        <div class="question" id="q69">
+          <h3>
+            69. Which command is used to translate or delete characters in a
+            file?
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q69" value="a" /> a) cut</label>
+            <label><input type="radio" name="q69" value="b" /> b) tr</label>
+            <label><input type="radio" name="q69" value="c" /> c) paste</label>
+            <label><input type="radio" name="q69" value="d" /> d) sort</label>
+          </div>
+        </div>
+        <div class="question" id="q70">
+          <h3>
+            70. What is the correct syntax to specify a shell interpreter in a
+            shell script?
+          </h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q70" value="a" /> a) #/bin/shell</label
+            >
+            <label
+              ><input type="radio" name="q70" value="b" /> b) #!/bin/bash</label
+            >
+            <label
+              ><input type="radio" name="q70" value="c" /> c) !#/bin/sh</label
+            >
+            <label
+              ><input type="radio" name="q70" value="d" /> d) @/bin/shell</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q71">
+          <h3>71. What is the positional parameter $0 in a shell script?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q71" value="a" /> a) The first
+              command-line argument.</label
+            >
+            <label
+              ><input type="radio" name="q71" value="b" /> b) The name of the
+              script.</label
+            >
+            <label
+              ><input type="radio" name="q71" value="c" /> c) The second
+              command-line argument.</label
+            >
+            <label
+              ><input type="radio" name="q71" value="d" /> d) The total number
+              of arguments passed.</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q72">
+          <h3>
+            72. Which logical operator is used to execute the next command only
+            if the previous command fails?
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q72" value="a" /> a) &&</label>
+            <label><input type="radio" name="q72" value="b" /> b) ||</label>
+            <label><input type="radio" name="q72" value="c" /> c) !</label>
+            <label><input type="radio" name="q72" value="d" /> d) &</label>
+          </div>
+        </div>
+        <div class="question" id="q73">
+          <h3>
+            73. What is the purpose of the test command in shell scripting?
+          </h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q73" value="a" /> a) To evaluate
+              expressions or conditions.</label
+            >
+            <label
+              ><input type="radio" name="q73" value="b" /> b) To test the
+              performance of a shell.</label
+            >
+            <label
+              ><input type="radio" name="q73" value="c" /> c) To run test cases
+              in UNIX.</label
+            >
+            <label
+              ><input type="radio" name="q73" value="d" /> d) To check the
+              availability of files.</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q74">
+          <h3>
+            74. Which loop structure is used to execute a set of commands for a
+            fixed number of iterations in a shell script?
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q74" value="a" /> a) while</label>
+            <label><input type="radio" name="q74" value="b" /> b) for</label>
+            <label><input type="radio" name="q74" value="c" /> c) if</label>
+            <label><input type="radio" name="q74" value="d" /> d) case</label>
+          </div>
+        </div>
+        <div class="question" id="q75">
+          <h3>75. What is the purpose of the expr command in UNIX?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q75" value="a" /> a) To evaluate
+              mathematical expressions.</label
+            >
+            <label
+              ><input type="radio" name="q75" value="b" /> b) To display the
+              contents of a file.</label
+            >
+            <label
+              ><input type="radio" name="q75" value="c" /> c) To count the
+              number of lines in a file.</label
+            >
+            <label
+              ><input type="radio" name="q75" value="d" /> d) To search for
+              patterns in a file.</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q76">
+          <h3>76. Which file stores user account information in UNIX?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q76" value="a" /> a) /etc/passwd</label
+            >
+            <label
+              ><input type="radio" name="q76" value="b" /> b) /etc/shadow</label
+            >
+            <label
+              ><input type="radio" name="q76" value="c" /> c)
+              /home/passwd</label
+            >
+            <label
+              ><input type="radio" name="q76" value="d" /> d)
+              /var/log/users</label
+            >
+          </div>
+        </div>
+        <div class="question" id="q77">
+          <h3>77. Which command is used to safely shut down a UNIX system?</h3>
+          <div class="options">
+            <label><input type="radio" name="q77" value="a" /> a) reboot</label>
+            <label><input type="radio" name="q77" value="b" /> b) halt</label>
+            <label
+              ><input type="radio" name="q77" value="c" /> c) shutdown</label
+            >
+            <label><input type="radio" name="q77" value="d" /> d) kill</label>
+          </div>
+        </div>
+        <div class="question" id="q78">
+          <h3>
+            78. Which command is used to display user disk usage and quota in
+            UNIX?
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q78" value="a" /> a) df</label>
+            <label><input type="radio" name="q78" value="b" /> b) quota</label>
+            <label><input type="radio" name="q78" value="c" /> c) du</label>
+            <label><input type="radio" name="q78" value="d" /> d) ls</label>
+          </div>
+        </div>
+        <div class="question" id="q79">
+          <h3>
+            79. Which positional parameter in a shell script contains the total
+            number of arguments passed?
+          </h3>
+          <div class="options">
+            <label><input type="radio" name="q79" value="a" /> a) $@</label>
+            <label><input type="radio" name="q79" value="b" /> b) $#</label>
+            <label><input type="radio" name="q79" value="c" /> c) $*</label>
+            <label><input type="radio" name="q79" value="d" /> d) $$</label>
+          </div>
+        </div>
+        <div class="button">
+          <button type="button" id="submit-btn">Submit</button>
+        </div>
+      </form>
+      <div id="result" class="result"></div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
